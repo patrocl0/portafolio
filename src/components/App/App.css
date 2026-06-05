@@ -1,0 +1,55 @@
+/* @import url("../../assets/fonts/font.css"); */
+@import "tailwindcss";
+
+@layer components {
+  .btn-contact {
+    @apply bg-transparent text-white text-xs inline-flex items-center gap-1.5 px-3 py-1.5 border border-sky-600 rounded-md  hover:bg-sky-800 transition-all tracking-wider;
+  }
+
+  .btn-link {
+    @apply px-6 py-2.5 rounded-xl cursor-pointer;
+  }
+}
+
+@layer utilities {
+  .text-outline {
+    color: #0000;
+    font: bold;
+    -webkit-text-stroke: 1px skyblue;
+  }
+
+  .hero-glow {
+    pointer-events: none;
+    background: radial-gradient(circle, #aadd5512, #0000 70%);
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+/* @layer utilities {
+  .tracking-tighter {
+    --tw-tracking: var(--tracking-tighter);
+    letter-spacing: var(--tracking-tighter);
+  }
+} */
+
+/* 
+@layer components {
+  .hero-title {
+    @apply font-bold tracking-tighter mb-6 animate-fade-up;
+    line-height: 0.95;
+    font-size: clamp(3.2rem, 10vw, 7rem);
+  }
+
+  .hero-title-first {
+    @apply block text-ink animate-fade-up;
+  }
+
+  .hero-title-last {
+    @apply block text-outline;
+  }
+} */
