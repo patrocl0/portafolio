@@ -60,7 +60,7 @@ export const Tecnologias = () => {
             <h3 className="font-mono text-xs text-center tracking-widest text-lime uppercase mb-4">
               {cat.label}
             </h3>
-            <div className="flex flex-wrap gap-2 sm:gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
               {cat.stack.map((tech) => (
                 <span
                   key={tech}

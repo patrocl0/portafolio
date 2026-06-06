@@ -1,5 +1,6 @@
 import newExplorer from "../../assets/newexplorer.png";
 import newExplorerBackend from "../../assets/backend.png";
+import around from "../../assets/around_home.png";
 
 const projects = [
   {
@@ -7,25 +8,30 @@ const projects = [
     imgPosition: "left",
     featured: "FEATURED . 01",
     title: "New Explorer",
+    url: "https://github.com/patrocl0/project_new_explorer_frontend.git",
     description:
-      "Conversational AI chatbot for appointment scheduling via WhatsApp, built with Node.js, TypeScript, Express, PostgreSQL, and Twilio.",
-    stack: [
-      "Javascript",
-      "Angular",
-      "Tailwind",
-      "NodeJs",
-      "Express",
-      "MongoDB",
-    ],
+      "Este proyecto es una aplicación Full Stack donde los usuarios pueden buscar noticias, registrarse/iniciar sesión y guardar artículos favoritos.",
+    stack: ["Javascript", "Tailwind", "NodeJs", "Express", "MongoDB"],
   },
   {
     img: newExplorerBackend,
     imgPosition: "right",
     featured: "FEATURED . 02",
     title: "New Explorer Backend",
+    url: "https://github.com/patrocl0/project_new_explorer_backend.git",
     description:
-      "Conversational AI chatbot for appointment scheduling via WhatsApp, built with Node.js, TypeScript, Express, PostgreSQL, and Twilio.",
+      "Este proyecto es una aplicación Full Stack donde los usuarios pueden buscar noticias, registrarse/iniciar sesión y guardar artículos favoritos.",
     stack: ["NodeJS", "Express", "MongoDB", "JWT"],
+  },
+  {
+    img: around,
+    imgPosition: "left",
+    featured: "FEATURED . 03",
+    title: "Around US",
+    url: "https://github.com/patrocl0/web_project_api_full.git",
+    description:
+      "Around The U.S. es una aplicación Fullstack que integra un frontend en React y un backend en Node.js/Express con MongoDB. El proyecto implementa un sistema completo de registro, inicio de sesión y autenticación mediante JWT, permitiendo a los usuarios acceder a contenido seguro e interactuar con tarjetas (cards) dentro de la plataforma.",
+    stack: ["Javascript", "React", "Express", "MongoDB", "JWT", "NodeJS"],
   },
 ];
 
@@ -86,9 +92,12 @@ export const Proyectos = () => {
               ))}
             </div>
 
-            <span className="mt-6 sm:mt-8 self-start text-[10px] sm:text-xs rounded border border-[#2a2a2a] whitespace-nowrap px-2 sm:px-2.5 py-1 text-muted hover:border-blue-500 hover:text-blue-500 cursor-default transition-colors duration-200">
-              GitHub
-            </span>
+            <a
+              href={project.url}
+              className="mt-6 sm:mt-8 self-start text-[10px] sm:text-xs rounded border border-[#2a2a2a] whitespace-nowrap px-2 sm:px-2.5 py-1 text-muted hover:border-blue-500 hover:text-blue-500 cursor-default transition-colors duration-200"
+            >
+              Github
+            </a>
           </div>
         </article>
       ))}

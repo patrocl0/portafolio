@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section id="sobre-mi" className="px-5 sm:px-10 md:px-16 lg:px-24">
       {/* Encabezado */}
-      <div className="flex justify-between items-center mb-10 sm:mb-16 gap-3">
+      <div className="flex justify-between items-center mb-10 sm:mb-16 gap-3 mt-10">
         <span className="h-px flex-1 border border-gray-600"></span>
         <p className="text-lg sm:text-2xl shrink-0 text-gray-400 font-mono whitespace-nowrap">
           Sobre mí
